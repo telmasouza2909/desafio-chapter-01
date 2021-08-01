@@ -1,0 +1,15 @@
+{
+    "$schema": "https://raw.githubusercontent.com/cypress-io/cypress/develop/cli/schema/cypress.schema.json",
+    "baseUrl": "http://automationpractice.com",
+    "viewportHeight": 900,
+    "viewportWidth": 1200,
+    "experimentalSourceRewriting": true,
+    "watchForFileChanges": false,
+    "screenshotOnRunFailure": true,
+    "screenshotsFolder": "screenshots",
+    "video": true,
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "configFile": "reporter-config.json"
+    }
+}
