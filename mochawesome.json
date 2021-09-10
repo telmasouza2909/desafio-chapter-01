@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2021-09-09T02:02:35.822Z",
-    "end": "2021-09-09T02:02:57.876Z",
-    "duration": 22054,
+    "failures": 0,
+    "start": "2021-09-10T02:02:22.939Z",
+    "end": "2021-09-10T02:02:47.671Z",
+    "duration": 24732,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "552ed744-eb2c-4707-a4bf-d38e111fe426",
+      "uuid": "abbbb853-f1e9-4cca-b22b-3b73c8882732",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "05626e06-7adb-4ef5-915f-f523619a75bd",
+          "uuid": "356e3a1a-747d-4d71-9157-aa564a426681",
           "title": "Tela de Cadastro de Usuário",
           "fullFile": "",
           "file": "",
@@ -38,33 +38,29 @@
               "title": "Cadastrar um novo usuário",
               "fullTitle": "Tela de Cadastro de Usuário Cadastrar um novo usuário",
               "timedOut": null,
-              "duration": 21929,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 24575,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "// Dado que eu acesso o site\ncy.visit(''); // E clico no botão de Sign In\ncy.get('[class=\"login\"]').click(); // E informo um email válido\ncy.get('input#email_create').type(chance.email()); // Quando clico no botão de Create an account\ncy.get('button#SubmitCreate').click(); // Então sou direcionado para a página de cadastro\ncy.url().should('contain', 'index.php?controller=authentication&back=my-account#account-creation'); // cy.get('[class=\"page-subheading\"]').first().should('contain.text', 'Your personal information');\ncy.get('.page-subheading').first().should('contain.text', 'Your personal information'); // Dado que informo o título\ncy.get('input#id_gender1').check(); // E informo um nome válido\ncy.get('input#customer_firstname').type(chance.first()); // E informo um sobrenome válido\ncy.get('input#customer_lastname').type(chance.last()); // E informo uma senha válida de no mínimo 5 caracteres\ncy.get('input#passwd').type(chance.string({\n  length: 8,\n  alpha: true\n})); // E informo um dia\ncy.get('select#days').select('12'); // E informo um mês\ncy.get('select#months').select('October'); // E informo um ano\ncy.get('select#years').select('1975'); // E aceito o newsletter\ncy.get('input#newsletter').check(); // E aceito receber ofertas de terceiros\ncy.get('input#optin').check(); // E informo um empresa válido\ncy.get('input#company').type(chance.company()); // E informo um endereço válido\ncy.get('input#address1').type(chance.address()); // E informo um segundo endereço válido\ncy.get('input#address2').type(chance.address()); // E informo uma cidade válido\ncy.get('input#city').type(chance.city()); // E seleciona um país\ncy.get('select#id_country').select('United States'); // E seleciono um estado\ncy.get('select#id_state').select('Florida'); // E informo um código postal válido\ncy.get('input#postcode').type(chance.zip()); // E insiro informações complementares\ncy.get('textarea#other').type(chance.paragraph({\n  sentences: 1\n})); // E informo um telefone válido\ncy.get('input#phone').type(chance.phone({\n  formatted: false\n})); // E informo um celular válido\ncy.get('input#phone_mobile').type(chance.phone({\n  formatted: false,\n  mobile: true\n})); // E informo uma referência endereço\ncy.get('input#alias').clear().type(chance.word({\n  length: 20\n})); // Quando clico no botão de registrar\ncy.get('button#submitAccount').click(); // Então devo ser direcionado para a área logada\ncy.url().should('contain', 'index.php?controller=my-account');\ncy.get('.info-account').should('contain.text', 'Welcome to your account.');",
-              "err": {
-                "message": "AssertionError: Timed out retrying after 4000ms: expected 'http://automationpractice.com/index.php?controller=authentication&back=my-account' to include 'index.php?controller=authentication&back=my-account#account-creation'",
-                "estack": "AssertionError: Timed out retrying after 4000ms: expected 'http://automationpractice.com/index.php?controller=authentication&back=my-account' to include 'index.php?controller=authentication&back=my-account#account-creation'\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress/integration/cadastro.spec.js:2221:14)",
-                "diff": null
-              },
-              "uuid": "f0060510-f253-4cb9-9a54-54f3fc4ce21a",
-              "parentUUID": "05626e06-7adb-4ef5-915f-f523619a75bd",
+              "err": {},
+              "uuid": "7dc67b64-8379-4092-baed-afe69d5f294f",
+              "parentUUID": "356e3a1a-747d-4d71-9157-aa564a426681",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "f0060510-f253-4cb9-9a54-54f3fc4ce21a"
+          "passes": [
+            "7dc67b64-8379-4092-baed-afe69d5f294f"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 21929,
+          "duration": 24575,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
