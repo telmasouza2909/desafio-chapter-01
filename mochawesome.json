@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2021-09-11T01:58:16.350Z",
-    "end": "2021-09-11T01:58:40.517Z",
-    "duration": 24167,
+    "start": "2021-09-12T02:03:04.245Z",
+    "end": "2021-09-12T02:03:23.593Z",
+    "duration": 19348,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d7fb7bef-b961-4c42-9ca8-8e050495253a",
+      "uuid": "9d2a631b-4936-421f-808b-b37a93af0876",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8e5e03d1-bad1-45e3-8722-106e8a1336d1",
+          "uuid": "4b6a626d-fc37-4410-aa70-288f9ff6d55f",
           "title": "Tela de Cadastro de Usuário",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Cadastrar um novo usuário",
               "fullTitle": "Tela de Cadastro de Usuário Cadastrar um novo usuário",
               "timedOut": null,
-              "duration": 24007,
+              "duration": 19196,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: expected 'http://automationpractice.com/index.php?controller=authentication&back=my-account' to include 'index.php?controller=authentication&back=my-account#account-creation'\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress/integration/cadastro.spec.js:2221:14)",
                 "diff": null
               },
-              "uuid": "510747b6-ad02-4c40-a13e-6e1c319ac037",
-              "parentUUID": "8e5e03d1-bad1-45e3-8722-106e8a1336d1",
+              "uuid": "554e9900-e0b1-4f84-bd91-cf506c7450c6",
+              "parentUUID": "4b6a626d-fc37-4410-aa70-288f9ff6d55f",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "510747b6-ad02-4c40-a13e-6e1c319ac037"
+            "554e9900-e0b1-4f84-bd91-cf506c7450c6"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 24007,
+          "duration": 19196,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
