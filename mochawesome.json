@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-09-17T02:07:08.918Z",
-    "end": "2021-09-17T02:07:28.699Z",
-    "duration": 19781,
+    "start": "2021-09-18T02:03:49.700Z",
+    "end": "2021-09-18T02:04:08.413Z",
+    "duration": 18713,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "bde5865e-67c9-42b8-a0ef-31b03a942c96",
+      "uuid": "acf9ad1d-6a9b-498c-a663-e57400494360",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b32b8a01-69c8-428d-9ed4-952f28fc8348",
+          "uuid": "c8074680-bdf4-4733-91bb-125b226aac7f",
           "title": "Tela de Cadastro de Usuário",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Cadastrar um novo usuário",
               "fullTitle": "Tela de Cadastro de Usuário Cadastrar um novo usuário",
               "timedOut": null,
-              "duration": 19656,
+              "duration": 18623,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "// Dado que eu acesso o site\ncy.visit(''); // E clico no botão de Sign In\ncy.get('[class=\"login\"]').click(); // E informo um email válido\ncy.get('input#email_create').type(chance.email()); // Quando clico no botão de Create an account\ncy.get('button#SubmitCreate').click(); // Então sou direcionado para a página de cadastro\ncy.url().should('contain', 'index.php?controller=authentication&back=my-account#account-creation'); // cy.get('[class=\"page-subheading\"]').first().should('contain.text', 'Your personal information');\ncy.get('.page-subheading').first().should('contain.text', 'Your personal information'); // Dado que informo o título\ncy.get('input#id_gender1').check(); // E informo um nome válido\ncy.get('input#customer_firstname').type(chance.first()); // E informo um sobrenome válido\ncy.get('input#customer_lastname').type(chance.last()); // E informo uma senha válida de no mínimo 5 caracteres\ncy.get('input#passwd').type(chance.string({\n  length: 8,\n  alpha: true\n})); // E informo um dia\ncy.get('select#days').select('12'); // E informo um mês\ncy.get('select#months').select('October'); // E informo um ano\ncy.get('select#years').select('1975'); // E aceito o newsletter\ncy.get('input#newsletter').check(); // E aceito receber ofertas de terceiros\ncy.get('input#optin').check(); // E informo um empresa válido\ncy.get('input#company').type(chance.company()); // E informo um endereço válido\ncy.get('input#address1').type(chance.address()); // E informo um segundo endereço válido\ncy.get('input#address2').type(chance.address()); // E informo uma cidade válido\ncy.get('input#city').type(chance.city()); // E seleciona um país\ncy.get('select#id_country').select('United States'); // E seleciono um estado\ncy.get('select#id_state').select('Florida'); // E informo um código postal válido\ncy.get('input#postcode').type(chance.zip()); // E insiro informações complementares\ncy.get('textarea#other').type(chance.paragraph({\n  sentences: 1\n})); // E informo um telefone válido\ncy.get('input#phone').type(chance.phone({\n  formatted: false\n})); // E informo um celular válido\ncy.get('input#phone_mobile').type(chance.phone({\n  formatted: false,\n  mobile: true\n})); // E informo uma referência endereço\ncy.get('input#alias').clear().type(chance.word({\n  length: 20\n})); // Quando clico no botão de registrar\ncy.get('button#submitAccount').click(); // Então devo ser direcionado para a área logada\ncy.url().should('contain', 'index.php?controller=my-account');\ncy.get('.info-account').should('contain.text', 'Welcome to your account.');",
               "err": {},
-              "uuid": "ddcfd090-2594-4094-bc22-b5ecb7073eb6",
-              "parentUUID": "b32b8a01-69c8-428d-9ed4-952f28fc8348",
+              "uuid": "8f7e03fe-8061-4b5c-9ddc-8e22f5e4bd7a",
+              "parentUUID": "c8074680-bdf4-4733-91bb-125b226aac7f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ddcfd090-2594-4094-bc22-b5ecb7073eb6"
+            "8f7e03fe-8061-4b5c-9ddc-8e22f5e4bd7a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 19656,
+          "duration": 18623,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
