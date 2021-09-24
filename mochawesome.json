@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2021-09-23T02:06:44.060Z",
-    "end": "2021-09-23T02:07:21.907Z",
-    "duration": 37847,
+    "start": "2021-09-24T02:02:07.381Z",
+    "end": "2021-09-24T02:03:08.051Z",
+    "duration": 60670,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "73a98c9e-ee29-49f4-a6a9-b5f8b281426d",
+      "uuid": "c3496d79-cc5d-46bd-a577-7ef4de5bb3ce",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2f660b57-831e-4d7f-a875-bcdcf678f50d",
+          "uuid": "3d805748-164d-4551-b1f9-2d7ac2d46e50",
           "title": "Tela de Cadastro de Usuário",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Cadastrar um novo usuário",
               "fullTitle": "Tela de Cadastro de Usuário Cadastrar um novo usuário",
               "timedOut": null,
-              "duration": 37767,
+              "duration": 60539,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -47,12 +47,12 @@
               "context": null,
               "code": "// Dado que eu acesso o site\ncy.visit(''); // E clico no botão de Sign In\ncy.get('[class=\"login\"]').click(); // E informo um email válido\ncy.get('input#email_create').type(chance.email()); // Quando clico no botão de Create an account\ncy.get('button#SubmitCreate').click(); // Então sou direcionado para a página de cadastro\ncy.url().should('contain', 'index.php?controller=authentication&back=my-account#account-creation'); // cy.get('[class=\"page-subheading\"]').first().should('contain.text', 'Your personal information');\ncy.get('.page-subheading').first().should('contain.text', 'Your personal information'); // Dado que informo o título\ncy.get('input#id_gender1').check(); // E informo um nome válido\ncy.get('input#customer_firstname').type(chance.first()); // E informo um sobrenome válido\ncy.get('input#customer_lastname').type(chance.last()); // E informo uma senha válida de no mínimo 5 caracteres\ncy.get('input#passwd').type(chance.string({\n  length: 8,\n  alpha: true\n})); // E informo um dia\ncy.get('select#days').select('12'); // E informo um mês\ncy.get('select#months').select('October'); // E informo um ano\ncy.get('select#years').select('1975'); // E aceito o newsletter\ncy.get('input#newsletter').check(); // E aceito receber ofertas de terceiros\ncy.get('input#optin').check(); // E informo um empresa válido\ncy.get('input#company').type(chance.company()); // E informo um endereço válido\ncy.get('input#address1').type(chance.address()); // E informo um segundo endereço válido\ncy.get('input#address2').type(chance.address()); // E informo uma cidade válido\ncy.get('input#city').type(chance.city()); // E seleciona um país\ncy.get('select#id_country').select('United States'); // E seleciono um estado\ncy.get('select#id_state').select('Florida'); // E informo um código postal válido\ncy.get('input#postcode').type(chance.zip()); // E insiro informações complementares\ncy.get('textarea#other').type(chance.paragraph({\n  sentences: 1\n})); // E informo um telefone válido\ncy.get('input#phone').type(chance.phone({\n  formatted: false\n})); // E informo um celular válido\ncy.get('input#phone_mobile').type(chance.phone({\n  formatted: false,\n  mobile: true\n})); // E informo uma referência endereço\ncy.get('input#alias').clear().type(chance.word({\n  length: 20\n})); // Quando clico no botão de registrar\ncy.get('button#submitAccount').click(); // Então devo ser direcionado para a área logada\ncy.url().should('contain', 'index.php?controller=my-account');\ncy.get('.info-account').should('contain.text', 'Welcome to your account.');",
               "err": {
-                "message": "AssertionError: Timed out retrying after 4000ms: expected 'http://automationpractice.com/index.php?controller=authentication&back=my-account' to include 'index.php?controller=authentication&back=my-account#account-creation'",
-                "estack": "AssertionError: Timed out retrying after 4000ms: expected 'http://automationpractice.com/index.php?controller=authentication&back=my-account' to include 'index.php?controller=authentication&back=my-account#account-creation'\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress/integration/cadastro.spec.js:2221:14)",
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://automationpractice.com/__cypress/runner/cypress_runner.js:137949:13)\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:138969:16\n    at tryCatcher (http://automationpractice.com/__cypress/runner/cypress_runner.js:10798:23)\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:5920:41\n    at tryCatcher (http://automationpractice.com/__cypress/runner/cypress_runner.js:10798:23)\n    at Promise._settlePromiseFromHandler (http://automationpractice.com/__cypress/runner/cypress_runner.js:8733:31)\n    at Promise._settlePromise (http://automationpractice.com/__cypress/runner/cypress_runner.js:8790:18)\n    at Promise._settlePromise0 (http://automationpractice.com/__cypress/runner/cypress_runner.js:8835:10)\n    at Promise._settlePromises (http://automationpractice.com/__cypress/runner/cypress_runner.js:8911:18)\n    at _drainQueueStep (http://automationpractice.com/__cypress/runner/cypress_runner.js:5505:12)\n    at _drainQueue (http://automationpractice.com/__cypress/runner/cypress_runner.js:5498:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://automationpractice.com/__cypress/runner/cypress_runner.js:5514:5)\n    at Async.drainQueues (http://automationpractice.com/__cypress/runner/cypress_runner.js:5384:14)\nFrom Your Spec Code:\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress/integration/cadastro.spec.js:2213:8)",
                 "diff": null
               },
-              "uuid": "ba543f31-0e8c-4fd1-9ad6-6e7562e10213",
-              "parentUUID": "2f660b57-831e-4d7f-a875-bcdcf678f50d",
+              "uuid": "50400084-1fd8-4dce-9e5a-fa19484d5a20",
+              "parentUUID": "3d805748-164d-4551-b1f9-2d7ac2d46e50",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "ba543f31-0e8c-4fd1-9ad6-6e7562e10213"
+            "50400084-1fd8-4dce-9e5a-fa19484d5a20"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 37767,
+          "duration": 60539,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
